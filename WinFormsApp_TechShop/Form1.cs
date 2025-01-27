@@ -9,7 +9,8 @@ namespace WinFormsApp_TechShop
 
         private void button_signIn_Click(object sender, EventArgs e)
         {
-
+            string id = User.SignIn(textBox_email.Text, textBox_password.Text);
+            label_id.Text = id;
         }
     }
 }

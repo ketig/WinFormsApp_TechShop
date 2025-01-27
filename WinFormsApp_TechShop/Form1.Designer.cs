@@ -28,30 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
+            label_email = new Label();
+            label_password = new Label();
             button_signIn = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            textBox_email = new TextBox();
+            textBox_password = new TextBox();
+            label_id = new Label();
             SuspendLayout();
             // 
-            // label1
+            // label_email
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(347, 148);
-            label1.Name = "label1";
-            label1.Size = new Size(97, 41);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            label_email.AutoSize = true;
+            label_email.Location = new Point(347, 148);
+            label_email.Name = "label_email";
+            label_email.Size = new Size(88, 41);
+            label_email.TabIndex = 0;
+            label_email.Text = "Email";
             // 
-            // label2
+            // label_password
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(347, 254);
-            label2.Name = "label2";
-            label2.Size = new Size(97, 41);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
+            label_password.AutoSize = true;
+            label_password.Location = new Point(347, 254);
+            label_password.Name = "label_password";
+            label_password.Size = new Size(143, 41);
+            label_password.TabIndex = 1;
+            label_password.Text = "Password";
             // 
             // button_signIn
             // 
@@ -63,30 +64,39 @@
             button_signIn.UseVisualStyleBackColor = true;
             button_signIn.Click += button_signIn_Click;
             // 
-            // textBox1
+            // textBox_email
             // 
-            textBox1.Location = new Point(614, 148);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(250, 47);
-            textBox1.TabIndex = 3;
+            textBox_email.Location = new Point(614, 148);
+            textBox_email.Name = "textBox_email";
+            textBox_email.Size = new Size(250, 47);
+            textBox_email.TabIndex = 3;
             // 
-            // textBox2
+            // textBox_password
             // 
-            textBox2.Location = new Point(614, 254);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(250, 47);
-            textBox2.TabIndex = 4;
+            textBox_password.Location = new Point(614, 254);
+            textBox_password.Name = "textBox_password";
+            textBox_password.Size = new Size(250, 47);
+            textBox_password.TabIndex = 4;
+            // 
+            // label_id
+            // 
+            label_id.AutoSize = true;
+            label_id.Location = new Point(680, 657);
+            label_id.Name = "label_id";
+            label_id.Size = new Size(0, 41);
+            label_id.TabIndex = 5;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1681, 1045);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(label_id);
+            Controls.Add(textBox_password);
+            Controls.Add(textBox_email);
             Controls.Add(button_signIn);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(label_password);
+            Controls.Add(label_email);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -95,10 +105,11 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
+        private Label label_email;
+        private Label label_password;
         private Button button_signIn;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox textBox_email;
+        private TextBox textBox_password;
+        private Label label_id;
     }
 }
